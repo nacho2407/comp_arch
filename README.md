@@ -1,10 +1,10 @@
 # jumpiler
 
-컴파일러(특히 전단부)의 이해를 돕기 위한 코드 모음
+컴파일러의 이해를 위한 어휘/구문 분석기 활용 코드 모음
 
 \-
 
-A collection of code to help understand the compiler(especially the front-end)
+A collection of code that leverages lexical analyzers/parsers for understanding compiler
 
 ---
 
