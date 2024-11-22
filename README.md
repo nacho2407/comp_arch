@@ -14,6 +14,6 @@ A collection of code that leverages lexical analyzers / parsers for understandin
 
 \-
 
-Compiler, 2024 Autumn Semester(Prof. [Woo Gyun](https://pl.pnu.edu/))
+Compiler, 2024 Autumn Semester(Prof. [Gyun Woo](https://pl.pnu.edu/))
 
-[School of Computer Science and Engineering](https://cse.pusan.ac.kr/), [Pusan National University](https://pusan.ac.kr/)
+[School of Computer Science and Engineering](https://cse.pusan.ac.kr/), [Pusan National University](https://pusan.ac.kr/), Republic of Korea
