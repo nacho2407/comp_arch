@@ -71,8 +71,7 @@ else    .
                 sval_active = 0;
         }
 
-        yylval.sval = strdup(yytext);
-        sval_active = 1;
+        yylval.ival = yytext[0];
 
         return OPRTR;
 }

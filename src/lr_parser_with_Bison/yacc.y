@@ -3,14 +3,14 @@
 
         extern int yylex();
         
-        int yyerror(char *s);
+        int yyerror(const char* msg);
 %}
 %union {
         int ival;
         char* sval;
 }
-%token <ival> ILITERAL
-%token <sval> SYNONYM STRING OPRTR
+%token <ival> ILITERAL OPRTR
+%token <sval> SYNONYM STRING
 %token NEXT
 %%
 Input   : Expression NEXT {
@@ -63,19 +63,14 @@ String  : STRING {
         }
         ;
 Operation
-        : Operator Iliteral Iliteral {
-                printf("O -> P I I\n");
-        }
-        ;
-Operator
-        : OPRTR {
-                printf("P -> %s\n", $1);
+        : OPRTR Iliteral Iliteral {
+                printf("O -> %c I I\n", $1);
         }
         ;
 %%
-int yyerror(char* s)
+int yyerror(const char* msg)
 {
-        fprintf(stderr, "%s\n", s);
+        fprintf(stderr, "%s\n", msg);
 
         return -1;
 }

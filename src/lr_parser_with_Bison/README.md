@@ -36,8 +36,7 @@ The list syntax is modeled after LISP.
 <string> ::= '"' { <character> } '"' ;
 <character> ::= (any valid ASCII) ;
 
-<operation> ::= <operator> <iliteral> <iliteral> ;
-<operator> ::= '+' | '-' | '/' | '*' ;
+<operation> ::= ('+' | '-' | '/' | '*') <iliteral> <iliteral> ;
 ```
 
 ---
