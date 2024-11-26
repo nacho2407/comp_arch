@@ -11,14 +11,9 @@
 }
 %token <ival> ILITERAL OPRTR
 %token <sval> SYNONYM STRING
-%token NEXT
 %%
-Input   : Expression NEXT {
-                return yyparse();
-        }
-        | /* ε */ {
-                /* do nothing */
-        }
+Input   : Expression
+        | Expression Input
         ;
 Expression
         : Iliteral {
@@ -46,16 +41,15 @@ Synonym : SYNONYM {
                 printf("S -> %s\n", $1);
         }
         ;
-List    : '(' Nullable_Expression ')' {
-                printf("L -> ( N )\n");
+List    : '(' Element ')' {
+                printf("L -> ( M )\n");
         }
         ;
-Nullable_Expression
-        : Expression Nullable_Expression {
-                printf("N -> E N\n");
+Element : Expression Element {
+                printf("M -> E M\n");
         }
         | /* ε */ {
-                printf("N -> nil\n");
+                printf("M -> nil\n");
         }
         ;
 String  : STRING {

@@ -10,8 +10,7 @@ iliteral        [+-]?[0-9]+
 synonym  [a-zA-Z][a-zA-Z0-9]*
 list_begin      \(
 list_end        \)
-whitespace      [ \t]+
-newline \n
+whitespace      [ \t\n]+
 comment ;.*\n
 string  \".*\"
 operator        [\+\-\/\*]
@@ -47,9 +46,6 @@ else    .
 }
 {whitespace} {
         /* do nothing */
-}
-{newline} {
-        return NEXT;
 }
 {comment} {
         /* do nothing */

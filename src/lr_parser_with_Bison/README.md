@@ -28,10 +28,10 @@ The list syntax is modeled after LISP.
 <synonym> ::= <alphabet> { <alphabet> | <digit> } ;
 <alphabet> ::= 'a' | ... | 'z' | 'A' | ... | 'Z' ;
 
-<list> ::= '(' <nullable_expression> ')' ;
-<nullable_expression> ::= <expression> <nullable_expression>
-                        | ε
-                        ;
+<list> ::= '(' <element> ')' ;
+<element> ::= <expression> <element>
+            | ε
+            ;
 
 <string> ::= '"' { <character> } '"' ;
 <character> ::= (any valid ASCII) ;
