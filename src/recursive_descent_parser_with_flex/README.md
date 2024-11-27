@@ -43,6 +43,7 @@ The list syntax is modeled after LISP.
 <string> ::= '"' { <character> } '"' ;
 
 <operator> ::= '+' | '-' | '/' | '*' ;
+
 ```
 
 ---
@@ -60,6 +61,7 @@ If you don't have flex installed, install it as shown below.
 ```Bash
 $ sudo apt update
 $ sudo apt install flex
+
 ```
 
 ---
@@ -73,4 +75,5 @@ Build and run as shown below.
 ```Bash
 $ make
 $ ./main
+
 ```

@@ -70,6 +70,7 @@ The EBNF of the grammars used in the code is shown below.
 <digit> ::= '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' ;
 
 <op_abs> ::= "Abs" ;
+
 ```
 
 ---
@@ -88,6 +89,7 @@ If you do not have flex and Bison installed, install them as shown below.
 $ sudo apt update
 $ sudo apt install flex
 $ sudo apt install bison
+
 ```
 
 ---
@@ -101,4 +103,5 @@ Build and run as shown below.
 ```Bash
 $ make
 $ ./main
+
 ```

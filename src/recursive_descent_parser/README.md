@@ -34,6 +34,7 @@ The list syntax is modeled after LISP.
 <list_end> ::= ')' ;
 
 <nil> ::= <list_begin> { <whitespace> } <list_end> ;
+
 ```
 
 ---
@@ -47,4 +48,5 @@ Build and run as shown below.
 ```Bash
 $ make
 $ ./main
+
 ```

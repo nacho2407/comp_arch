@@ -37,6 +37,7 @@ The list syntax is modeled after LISP.
 <character> ::= (any valid ASCII) ;
 
 <operation> ::= ('+' | '-' | '/' | '*') <iliteral> <iliteral> ;
+
 ```
 
 ---
@@ -55,6 +56,7 @@ If you do not have flex and Bison installed, install them as shown below.
 $ sudo apt update
 $ sudo apt install flex
 $ sudo apt install bison
+
 ```
 
 ---
@@ -68,4 +70,5 @@ Build and run as shown below.
 ```Bash
 $ make
 $ ./main
+
 ```
