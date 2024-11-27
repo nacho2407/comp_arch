@@ -1,6 +1,6 @@
 # LR Parser with Bison
 
-flex를 이용하여 제작한 어휘 분석기 `yylex()`와 Bison을 이용하여 제작한 LR 구문 분석기 `yyparse()`를 이용하여 문자열의 우파스를 출력하는 코드입니다.
+flex로 제작한 어휘 분석기 `yylex()`와 Bison으로 제작한 LR 구문 분석기 `yyparse()`를 이용하여 문자열의 우파스를 출력하는 코드입니다.
 
 코드에서 사용된 문법의 EBNF는 아래와 같습니다.
 
@@ -51,7 +51,7 @@ You will need flex and Bison to run this code.
 
 If you do not have flex and Bison installed, install them as shown below.
 
-```shell
+```Bash
 $ sudo apt update
 $ sudo apt install flex
 $ sudo apt install bison
@@ -65,7 +65,7 @@ $ sudo apt install bison
 
 Build and run as shown below.
 
-```shell
+```Bash
 $ make
 $ ./main
 ```

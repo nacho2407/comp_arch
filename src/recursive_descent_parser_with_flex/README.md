@@ -1,6 +1,6 @@
 # Recursive Descent Parser with flex
 
-flex를 이용하여 제작한 어휘 분석기 `yylex()`를 이용하는 순환 하강 구문 분석기 `yyparse()` 코드입니다.
+flex로 제작한 어휘 분석기 `yylex()`를 이용하는 순환 하강 구문 분석기 `yyparse()` 코드입니다.
 
 코드에서 사용된 문법의 EBNF는 아래와 같습니다.
 
@@ -57,7 +57,7 @@ You will need flex to run this code.
 
 If you don't have flex installed, install it as shown below.
 
-```shell
+```Bash
 $ sudo apt update
 $ sudo apt install flex
 ```
@@ -70,7 +70,7 @@ $ sudo apt install flex
 
 Build and run as shown below.
 
-```shell
+```Bash
 $ make
 $ ./main
 ```

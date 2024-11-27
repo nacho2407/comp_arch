@@ -15,10 +15,10 @@
         #define MAX_BUF 128
 
         #ifdef LEX_YY_DEF
-                #define EXT
+                #define LEX_YY_EXT
         #else
-                #define EXT extern
+                #define LEX_YY_EXT extern
         #endif
 
-        EXT int oprtr_val;
+        LEX_YY_EXT int oprtr_val;
 #endif

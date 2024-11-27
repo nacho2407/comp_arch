@@ -44,7 +44,7 @@ The list syntax is modeled after LISP.
 
 Build and run as shown below.
 
-```shell
+```Bash
 $ make
 $ ./main
 ```

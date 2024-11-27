@@ -6,16 +6,18 @@
 
 int sval_active = 0;
 %}
+
 iliteral        [+-]?[0-9]+
-synonym  [a-zA-Z][a-zA-Z0-9]*
+synonym         [a-zA-Z][a-zA-Z0-9]*
 list_begin      \(
 list_end        \)
 whitespace      [ \t\n]+
-comment ;.*\n
-string  \".*\"
+comment         ;.*\n
+string          \".*\"
 operator        [\+\-\/\*]
-end     \0
-else    .
+end             \0
+else            .
+
 %%
 {iliteral} {
         if(sval_active) {
@@ -27,6 +29,7 @@ else    .
 
         return ILITERAL;
 }
+
 {synonym} {
         if(sval_active) {
                 free(yylval.sval);
@@ -38,18 +41,23 @@ else    .
 
         return SYNONYM;
 }
+
 {list_begin} {
         return '(';
 }
+
 {list_end} {
         return ')';
 }
+
 {whitespace} {
         /* do nothing */
 }
+
 {comment} {
         /* do nothing */
 }
+
 {string} {
         if(sval_active) {
                 free(yylval.sval);
@@ -61,6 +69,7 @@ else    .
 
         return STRING;
 }
+
 {operator} {
         if(sval_active) {
                 free(yylval.sval);
@@ -71,6 +80,7 @@ else    .
 
         return OPRTR;
 }
+
 {end} {
         if(sval_active) {
                 free(yylval.sval);
@@ -79,10 +89,12 @@ else    .
         
         return 0;
 }
+
 {else} {
         /* do nothing */
 }
 %%
+
 int yywrap()
 {
         return 1;
