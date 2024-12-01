@@ -9,7 +9,7 @@ whitespace      [ \t]+
 newline         \n
 comment         ;.*\n
 operator        [\+\-\/\*\%]
-op_abs          Abs
+op_abs          abs
 end             \0
 else            .
 
