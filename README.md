@@ -1,6 +1,6 @@
 # jumpiler
 
-컴파일러의 이해를 위한 어휘 / 구문 분석기 활용 코드 모음
+컴파일러의 이해를 돕기 위한 어휘 / 구문 분석기 활용 코드 모음
 
 \-
 
@@ -14,6 +14,6 @@ A collection of code that leverages lexical analyzers / parsers for understandin
 
 \-
 
-Compiler, 2024 Autumn Semester(Prof. [Gyun Woo](https://pl.pnu.edu/))
+Compiler, 2024 Autumn Semester(Prof. [Woo, Gyun](https://pl.pnu.edu/))
 
 [School of Computer Science and Engineering](https://cse.pusan.ac.kr/), [Pusan National University](https://pusan.ac.kr/), Republic of Korea

@@ -4,7 +4,7 @@
 %}
 
 iliteral        [+-]?[0-9]+
-synonym         [a-zA-Z][a-zA-Z0-9]*
+synonym         [_A-Za-z][_A-Za-z0-9]*
 list_begin      \(
 list_end        \)
 whitespace      [ \t\n]+
@@ -15,6 +15,7 @@ end             \0
 else            .
 
 %%
+
 {iliteral} {
         return ILITERAL;
 }
@@ -97,6 +98,7 @@ else            .
 {else} {
         /* do nothing */
 }
+
 %%
 
 int yywrap()

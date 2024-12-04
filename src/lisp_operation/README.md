@@ -1,4 +1,4 @@
-# LISP Operation with Bison
+# LISP Operation
 
 flex로 제작한 어휘 분석기 `yylex()`와 Bison으로 제작한 LR 구문 분석기 `yyparse()`를 이용하여 구현한 LISP 스타일 연산식 계산기 코드입니다.
 

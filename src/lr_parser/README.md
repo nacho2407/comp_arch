@@ -1,4 +1,4 @@
-# LR Parser with Bison
+# LR Parser
 
 flex로 제작한 어휘 분석기 `yylex()`와 Bison으로 제작한 LR 구문 분석기 `yyparse()`를 이용하여 문자열의 우파스를 출력하는 코드입니다.
 
@@ -25,7 +25,8 @@ The list syntax is modeled after LISP.
 <iliteral> ::= [ '+' | '-' ] <digit> { <digit> } ;
 <digit> ::= '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' ;
 
-<synonym> ::= <alphabet> { <alphabet> | <digit> } ;
+<synonym> ::= <non_digit> { <non_digit> | <digit> } ;
+<non_digit> ::= '_' | <alphabet> ;
 <alphabet> ::= 'a' | ... | 'z' | 'A' | ... | 'Z' ;
 
 <list> ::= '(' <element> ')' ;

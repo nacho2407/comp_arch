@@ -14,6 +14,7 @@ end             \0
 else            .
 
 %%
+
 {iliteral} {
         yylval = atoi(yytext);
 
@@ -55,6 +56,7 @@ else            .
 {else} {
         /* do nothing */
 }
+
 %%
 
 int yywrap()

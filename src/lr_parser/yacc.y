@@ -10,10 +10,12 @@
         int ival;
         char* sval;
 }
+
 %token <ival> ILITERAL OPRTR
 %token <sval> SYNONYM STRING
 
 %%
+
 Input   : Expression
         | Expression Input
         ;
@@ -70,6 +72,7 @@ Operation
                 printf("O -> %c I I\n", $1);
         }
         ;
+
 %%
 
 int yyerror(const char* msg)

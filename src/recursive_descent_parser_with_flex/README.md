@@ -28,7 +28,8 @@ The list syntax is modeled after LISP.
 <iliteral> ::= [ '+' | '-' ] <digit> { <digit> } ;
 <digit> ::= '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' ;
 
-<synonym> ::= <alphabet> { <alphabet> | <digit> } ;
+<synonym> ::= <non_digit> { <non_digit> | <digit> } ;
+<non_digit> ::= '_' | <alphabet> ;
 <alphabet> ::= 'a' | ... | 'z' | 'A' | ... | 'Z' ;
 
 <list_begin> ::= '(' ;

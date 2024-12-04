@@ -9,6 +9,7 @@
 %token ILITERAL NEWLINE OP_ABS
 
 %%
+
 Input   : Term Input
         | Term
         ;
@@ -160,6 +161,7 @@ Abs_term
         ;
 
 Null    : '(' ')' ;
+
 %%
 
 int yyerror(const char* msg)
