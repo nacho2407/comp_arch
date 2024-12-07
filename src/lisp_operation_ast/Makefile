@@ -7,10 +7,10 @@ lex.yy.c: lex.l
 	flex lex.l
 
 y.tab.c: yacc.y
-	bison -d -y yacc.y
+	bison -dy yacc.y
 
 y.tab.h: yacc.y
-	bison -d -y yacc.y
+	bison -dy yacc.y
 
 zip: include/ast.h ast.c lex.l main.c Makefile README.md yacc.y
 	zip main.zip include/ast.h ast.c lex.l main.c Makefile README.md yacc.y
